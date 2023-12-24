@@ -8,7 +8,7 @@ app.get("/", (_, res) => res.send("running"));
 
 let port = 4000;
 app.listen(port, async () => {
-  console.log(`server running at http://localhost:${port}`);
+  console.log(`server running at ${port}`);
   AppDataSource.initialize()
     .then(async () => {
       console.log("database initialized");
